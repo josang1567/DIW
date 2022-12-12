@@ -1,84 +1,225 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="icon" href="./imagenes/favIcon.png" alt="Favicon">
-      
-    <title>SeedMarket</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-      <!-- Bootstrap core CSS -->
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="icon" href="./imagenes/favIcon.png" alt="Favicon">
+
+  <title>SeedMarket</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
-      <img src="./imagenes/icon_nav.png" alt="icon_nav">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success ">
+    <img src="./imagenes/icon_nav.png" alt="icon_nav">
+    <p class="h1">SeedMarket</p>
+
+ 
+    <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <a href="login.html">
+      <button class="Return">
+        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+          <path
+            d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
+          </path>
+        </svg>
+        <span>Back</span>
+      </button>
+    </a>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--menu de compra -->
+  <div class="text-center  py-5">
+    <table class="table table-bordered table-sm table-hover table-striped">
+      <thead class="thead-success" >
+        <tr>
+          <th scope="col">Tipo de semilla</th>
+          <th scope="col">Descripcion</th>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">&nbsp;</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Granos negros</td>
+          <td>Otto</td>
+          <td><img src="./Imagenes/semilla-1.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td><button class="learn-more learn-more2 ">
+              <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir pack</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Alubias pintas</td>
+          <td>Thornton</td>
+          <td><img src="./Imagenes/semilla-2.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td><button class="learn-more learn-more2 ">
+              <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir pack</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Semillas de girasol</td>
+          <td>the Bird</td>
+          <td><img src="./Imagenes/semilla-3.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td><button class="learn-more learn-more2 ">
+              <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir pack</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Semillas de girasol</td>
+          <td>the Bird</td>
+          <td><img src="./Imagenes/semilla-4.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td><button class="learn-more learn-more2 ">
+              <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir pack</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Semillas de maiz</td>
+          <td>the Bird</td>
+          <td><img src="./Imagenes/semilla-5.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td><button class="learn-more learn-more2 ">
+              <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir pack</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Semillas de cilantro</td>
+          <td>the Bird</td>
+          <td><img src="./Imagenes/semilla-6.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td><button class="learn-more learn-more2 ">
+              <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Añadir pack</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-success  text-white ">
+    
+    <div class="container    p-4">
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+      <section class="">
+       
+        <div class="row">
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links relacionados</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="FAQS.html" class="text-white a">FAQS</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Terminos & servicios</a>
+              </li>
+             
+            </ul>
+          </div>
+         
+          <div class="row">
+            <form action="">
+             
+              <div class="row d-flex justify-content-center">
+               
+                <div class="col-12">
+                  <p class="pt-2 d-flex justify-content-center">
+                    <strong>Subscribete a el boletin de noticias</strong>
+                  </p>
+                </div>
+                              
+                <div class="col-md-5 col-11">
+                  <!-- Email input -->
+                  <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example21" class="form-control" placeholder="Correo electronico" />
+                  </div>
+                </div>
+                          
+                <div class="col-1">
+                  <!-- Submit button -->
+                  <button class="learn-more ">
+                    <span class="circle bg-dark" aria-hidden="true">
+                      <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Subcribete</span>
+                  </button>
+                </div>               
               </div>
-            </li>
-           
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+            </form>
+          </div>
         </div>
-      </nav>
-      <!--menu de compra -->
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      </section>
+    </div>
+  
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+    </div>
+  </footer>
+
 </body>
+
+
 </html>
