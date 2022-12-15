@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-ssh": "^0.7.0",
+    "sassdoc": "^2.7.4",
     "vite": "^4.0.0"
   },
   "dependencies": {
