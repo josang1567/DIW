@@ -10,77 +10,73 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
   <!-- Bootstrap core CSS -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <script src="./js/bootstrap.min.js"></script>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-success ">
-    <img src="./imagenes/icon_nav.png" alt="icon_nav">
-    <p class="h1">SeedMarket</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid col-xl-11">
+      <div class="navbar-collapse " id="navbarSupportedContent">
+        <div class="col-10">
+          <img src="./imagenes/icon_nav.png" alt="icon_nav">
+          <label class="h1 ms-4 ">SeedMarket</label>
+        </div> 
+        <div class="col-2 dropdown ">
+          <button class="btn btn-success dropdown-toggle border border-dark" type="button" data-bs-toggle="dropdown"
+            style="background-color: rgba(0, 0, 0, 0.2);" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+          </button>
+          <ul class="dropdown-menu  ">
+            <li>
+              <p>Usuario Usuario</p>
+            </li>
+            <li>
+              <a class="mr-2 text-dark" href="#">
+                <i class="fa fa-user fa-1x ml"></i>Perfil
+              </a>
+            </li>
 
- 
-    <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    <a href="login.html">
-      <button class="Return">
-        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
-          <path
-            d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
-          </path>
-        </svg>
-        <span>Back</span>
-      </button>
-    </a>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+            <li>
+              <a href="carrito.html" class="mr-2 text-dark">
+                <i class="fas fa-shopping-cart fa-1x"></i>Ver Carrito
+              </a>
+            </li>
+            <li>
+              <a href="login.html" class="mr-2 text-dark">
+                <i class="fas fa-sign-out-alt"></i>Cerrar sesion
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
     </div>
   </nav>
-  <!--menu de compra -->
-  <div class="text-center  py-5">
-    <table class="table table-bordered table-sm table-hover table-striped">
-      <thead class="thead-success" >
-        <tr>
-          <th scope="col">Tipo de semilla</th>
-          <th scope="col">Descripcion</th>
-          <th scope="col">&nbsp;</th>
-          <th scope="col">&nbsp;</th>
 
+  <!--menu de compra -->
+  <div class="text-center py-5 mx-5 ">
+    <table class="table table-bordered table-sm table-hover table-striped">
+      <thead class="thead-success">
+        <tr>
+          <th class="col-2">Tipo de semilla</th>
+          <th class="col-4">Descripcion</th>
+          <th class="col-2">Muestra</th>
+          <th class="col-2">Precio</th>
+          <th class="col-2"></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Granos negros</td>
-          <td>Otto</td>
-          <td><img src="./Imagenes/semilla-1.png" alt="Semilla 1" height="100px" width="100px"></td>
-          <td><button class="learn-more learn-more2 ">
+          <td class="col-2">Semillas de frijol</td>
+          <td class="col-4 text-start">-Planta originaria de America <br> -Florece a los 35 días después de germinar.<br> -La madurez de los
+            frutos ocurre entre 65 y 75 días después de la germinación.</td>
+          <td class="col-2"><img src="./Imagenes/semilla-1.png" alt="Semilla 1" height="100px" width="100px"></td>
+          <td class="col-2">5€</td>
+          <td class="col-2"><button class="learn-more learn-more2 ">
               <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
                 <span class="icon arrow"></span>
               </span>
@@ -89,10 +85,12 @@
           </td>
         </tr>
         <tr>
-          <td>Alubias pintas</td>
-          <td>Thornton</td>
-          <td><img src="./Imagenes/semilla-2.png" alt="Semilla 1" height="100px" width="100px"></td>
-          <td><button class="learn-more learn-more2 ">
+          <td class="col-2">Alubias pintas</td>
+          <td class="col-4 text-start">-Planta originaria de America <br>-Florece a los 20 días de germinar. <br> -La madurez de los
+            frutos ocurre entre 65 y 75 días después de la germinación </td>
+          <td class="col-2"><img src="./Imagenes/semilla-2.png" alt="Semilla 2" height="100px" width="100px"></td>
+          <td class="col-2">5€</td>
+          <td class="col-2"><button class="learn-more learn-more2 ">
               <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
                 <span class="icon arrow"></span>
               </span>
@@ -101,10 +99,12 @@
           </td>
         </tr>
         <tr>
-          <td>Semillas de girasol</td>
-          <td>the Bird</td>
-          <td><img src="./Imagenes/semilla-3.png" alt="Semilla 1" height="100px" width="100px"></td>
-          <td><button class="learn-more learn-more2 ">
+          <td class="col-2">Semillas de girasol</td>
+          <td class="col-4 text-start">-Planta originaria de Mexico <br>-Florece a los 20-35 días de germinar. <br> -La madurez de los
+            frutos ocurre 40 días  después de la germinación</td>
+          <td class="col-2"><img src="./Imagenes/semilla-3.png" alt="Semilla 3" height="100px" width="100px"></td>
+          <td class="col-2">5€</td>
+          <td class="col-2"><button class="learn-more learn-more2 ">
               <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
                 <span class="icon arrow"></span>
               </span>
@@ -113,10 +113,12 @@
           </td>
         </tr>
         <tr>
-          <td>Semillas de girasol</td>
-          <td>the Bird</td>
-          <td><img src="./Imagenes/semilla-4.png" alt="Semilla 1" height="100px" width="100px"></td>
-          <td><button class="learn-more learn-more2 ">
+          <td class="col-2">Semillas de calabaza</td>
+          <td class="col-4 text-start">-Planta originaria de Mexico <br>-Florece a los 35-45 días de germinar. <br> -La madurez de los
+            frutos ocurre 3 meses después de la germinación</td>
+          <td class="col-2"><img src="./Imagenes/semilla-4.png" alt="Semilla 4" height="100px" width="100px"></td>
+          <td class="col-2">5€</td>
+          <td class="col-2"><button class="learn-more learn-more2 ">
               <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
                 <span class="icon arrow"></span>
               </span>
@@ -125,10 +127,12 @@
           </td>
         </tr>
         <tr>
-          <td>Semillas de maiz</td>
-          <td>the Bird</td>
-          <td><img src="./Imagenes/semilla-5.png" alt="Semilla 1" height="100px" width="100px"></td>
-          <td><button class="learn-more learn-more2 ">
+          <td class="col-2">Semillas de maiz</td>
+          <td class="col-4 text-start">-Planta originaria de Mexico <br>-Florece a los 60 días de germinar. <br> -La madurez de los
+            frutos ocurre entre 60 y 80 días después de la germinación</td>
+          <td class="col-2"><img src="./Imagenes/semilla-5.png" alt="Semilla 5" height="100px" width="100px"></td>
+          <td class="col-2">5€</td>
+          <td class="col-2"><button class="learn-more learn-more2 ">
               <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
                 <span class="icon arrow"></span>
               </span>
@@ -137,10 +141,12 @@
           </td>
         </tr>
         <tr>
-          <td>Semillas de cilantro</td>
-          <td>the Bird</td>
-          <td><img src="./Imagenes/semilla-6.png" alt="Semilla 1" height="100px" width="100px"></td>
-          <td><button class="learn-more learn-more2 ">
+          <td class="col-2">Semillas de cilantro</td>
+          <td class="col-4 text-start">-Planta originaria de Mexico <br>-Florece a los 7 y 10 días de germinar. <br> -La madurez de los
+            frutos ocurre entre 45 y 55 días  después de la germinación</td>
+          <td class="col-2"><img src="./Imagenes/semilla-6.png" alt="Semilla 6" height="100px" width="100px"></td>
+          <td class="col-2">5€</td>
+          <td class="col-2"><button class="learn-more learn-more2 ">
               <span class="circle bg-success" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.2);">
                 <span class="icon arrow"></span>
               </span>
@@ -156,62 +162,79 @@
 
 
   <!-- Footer -->
-  <footer class="bg-success  text-white ">
-    
-    <div class="container    p-4">
-      
+  <footer class="bg-success text-white ">
+
+    <div class="container p-4">
+
       <section class="">
-       
+
         <div class="row">
-         
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links relacionados</h5>
+
+          <div class="col-3">
+            <h5 class="text-uppercase"><ins>Links relacionados</ins> </h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="FAQS.html" class="text-white a">FAQS</a>
+                <a href="FAQS(user).html" class="text-white a">FAQS</a>
               </li>
               <li>
                 <a href="#!" class="text-white">Terminos & servicios</a>
               </li>
-             
+
             </ul>
           </div>
-         
-          <div class="row">
-            <form action="">
-             
-              <div class="row d-flex justify-content-center">
-               
-                <div class="col-12">
-                  <p class="pt-2 d-flex justify-content-center">
-                    <strong>Subscribete a el boletin de noticias</strong>
-                  </p>
-                </div>
-                              
-                <div class="col-md-5 col-11">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example21" class="form-control" placeholder="Correo electronico" />
-                  </div>
-                </div>
-                          
-                <div class="col-1">
-                  <!-- Submit button -->
-                  <button class="learn-more ">
-                    <span class="circle bg-dark" aria-hidden="true">
-                      <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Subcribete</span>
-                  </button>
-                </div>               
+          <div class="col-2">
+            <h5 class="text-uppercase"><ins>Redes sociales</ins></h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fab fa-twitter"></i>
+                <a href="#!" class="text-white a">Twitter</a>
+              </li>
+              <li>
+                <i class="fab fa-facebook"></i>
+                <a href="#!" class="text-white">Facebook</a>
+              </li>
+              <li>
+                <i class="fab fa-instagram"></i>
+                <a href="#!" class="text-white">Instagram</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-7">
+            <div class="row  justify-content-center">
+              <div class="col-10">
+                <p class="pt-2 d-flex justify-content-center">
+                  <strong>Unete al boletin de noticias</strong>
+                </p>
               </div>
-            </form>
+
+              <div class="col-md-5 col-1">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example21" class="form-control" placeholder="Correo electronico" />
+                </div>
+              </div>
+
+              <div class="col-1">
+                <!-- Submit button -->
+                <button class="learn-more ">
+                  <span class="circle bg-dark" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text">Subcribete</span>
+                </button>
+              </div>
           </div>
         </div>
+          
+
+    
+        </div>
       </section>
+
     </div>
-  
+
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
