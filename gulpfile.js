@@ -1,5 +1,4 @@
-const{ series,parallel,src,dest,watch}=require("gulp");
-
+const{ series,parallel,src,dest,watch,task}=require("gulp");
 const git = require( "gulp-git");
 const rm = require( 'gulp-rm' );
 const sass = require("gulp-dart-scss");
@@ -23,7 +22,7 @@ var config = {
     sshConfig: config
   })
 
-  gulp.task('exec', function () {
+  task('exec', function () {
     return gulpSSH
       .exec(['docker-compose up'], {filePath: 'commands.log'})
       .pipe(gulp.dest('logs'))
@@ -32,8 +31,8 @@ var config = {
 
 
 //generar sassdoc
-gulp.task('sassdoc', function () {
-  return gulp.src('node_modules/bootstrap-5.2.3/scss/bootstrap.scss')
+task('sassdoc', function () {
+  return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
     .pipe(sassdoc());
 });
 
